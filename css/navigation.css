@@ -1,4 +1,48 @@
-.nav{
+.container{
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.container a:hover {
+  background-color: #ddd;
+}
+
+.cta{
+  background-color: rgb(219, 247, 176);
+}
+
+.cta:hover {
+  background: #e3dcdf
+}
+
+.cta:active {
+  background: rgb(17, 0, 0);
+}
+
+/* animated newtons cradle */
+.newtons-cradle {
+  --uib-size: 40px;
+  --uib-speed: 1.4s;
+  --uib-color: rgb(255, 255, 255);
+
+  position: relative;
   display: flex;
-  justify-content: right;
+  align-items: center;
+  justify-content: center;
+  width: var(--uib-size);
+  height: var(--uib-size);
+  margin-left: 2rem;
+}
+
+.newtons-cradle__dot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 25%;
+  transform-origin: center top;
 }
